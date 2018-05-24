@@ -23,16 +23,25 @@ def valid_move?(board, index)
 end
 end
 
+<<<<<<< HEAD
 def move(board,index, symbol="X")
+=======
+def move(board,index, symbol)
+>>>>>>> 4c76a71373ae7e0b181e278cdbef48fb52593873
     board[index]=symbol
   end
   
 def turn (board)
+<<<<<<< HEAD
   loop do
+=======
+  
+>>>>>>> 4c76a71373ae7e0b181e278cdbef48fb52593873
   puts "Please enter 1-9:"
   num=gets.chomp
   value=input_to_index(num)
   if(valid_move?(board, value)==true)
+<<<<<<< HEAD
     move(board, value)
 display_board(board)
     break
@@ -40,5 +49,12 @@ display_board(board)
   end
 end
 
+=======
+    move(board, value, symbol)
+  else
+    loop do turn(board)
+  end
+  
+>>>>>>> 4c76a71373ae7e0b181e278cdbef48fb52593873
 
 end
